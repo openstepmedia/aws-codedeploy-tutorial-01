@@ -8,6 +8,6 @@ public class HelloWorldController
     public String hello() 
     {
         // LocalDate today = LocalDate.now();
-        return "<h1> Congratulations. Inside HelloWorldController. time:3:20pm</h1>";
+        return "<h1> Congratulations. Inside HelloWorldController. time:4:30pm  - Hi Argenis and Oswell!</h1>";
     }
 }
