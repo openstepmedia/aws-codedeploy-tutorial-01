@@ -10,12 +10,14 @@ public class SpringBootHelloWorldExampleApplication  extends SpringBootServletIn
 {
 	@Override
 	
-	    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-	
-	        return application.sources(SpringBootHelloWorldExampleApplication.class);
-	   }
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) 
+	{
+		return application.sources(SpringBootHelloWorldExampleApplication.class);
+	}
+
 	public static void main(String[] args) 
-{
-SpringApplication.run(SpringBootHelloWorldExampleApplication.class, args);
-}
+	{
+		/* something here. */
+		SpringApplication.run(SpringBootHelloWorldExampleApplication.class, args);
+	}
 }
