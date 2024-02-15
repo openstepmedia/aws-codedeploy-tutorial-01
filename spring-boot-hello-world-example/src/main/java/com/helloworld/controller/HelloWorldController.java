@@ -7,7 +7,7 @@ public class HelloWorldController
     @RequestMapping("/")
     public String hello() 
     {
-        LocalDate today = LocalDate.now();
-        return "<h1> Congratulations. Inside HelloWorldController. time:" + today.toString() +  "</h1>";
+        // LocalDate today = LocalDate.now();
+        return "<h1> Congratulations. Inside HelloWorldController. time:3:20pm</h1>";
     }
 }
