@@ -17,3 +17,4 @@ arn:aws:iam::044601950830:role/CodeDeployRoleforGitHub
 WebappUrl
 http://sm-cod-Appli-Q9P7Nim2mSvT-603543779.us-west-2.elb.amazonaws.com:8080/SpringBootHelloWorldExampleApplication
 
+https://github.com/openstepmedia/aws-codedeploy-tutorial-01.git
