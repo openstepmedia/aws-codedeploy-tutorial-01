@@ -1,7 +1,11 @@
 name: Build and Deploy
 
 on:
-  workflow_dispatch: {}
+  # See: https://aws.amazon.com/blogs/devops/integrating-with-github-actions-ci-cd-pipeline-to-deploy-a-web-app-to-amazon-ec2/
+  # workflow_dispatch: {}
+  push:
+    branches: [ main ]
+  pull_request:  
 
 env:
   applicationfolder: spring-boot-hello-world-example

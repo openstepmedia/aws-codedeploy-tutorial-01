@@ -18,3 +18,5 @@ WebappUrl
 http://sm-cod-Appli-Q9P7Nim2mSvT-603543779.us-west-2.elb.amazonaws.com:8080/SpringBootHelloWorldExampleApplication
 
 https://github.com/openstepmedia/aws-codedeploy-tutorial-01.git
+
+http://sm-cod-appli-q9p7nim2msvt-603543779.us-west-2.elb.amazonaws.com:8080/SpringBootHelloWorldExampleApplication/
