@@ -1,0 +1,34 @@
+#
+# Example .toml file:
+#
+# Deploy asgard transport layer within private vpc
+#
+# Usage:  
+# cp samconfig.toml.example samconfig.toml
+# sam deploy --config-file samconfig.toml --debug
+# sam delete --config-file samconfig.toml
+# sam build && sam deploy --config-file samconfig.toml
+version = 0.1
+[default.deploy.parameters]
+# Stack name for this deployment
+stack_name = "sm-codedeploy-20240215"
+
+# Set S3 bucket folder where build code will reside
+s3_prefix = "sm-codedeploy-20240215"
+
+# Set region
+region = "us-west-2"
+
+# This aws profile must be in ~/.aws/config
+profile = "sethm_cc_sandbox_w2"
+
+resolve_s3 = true
+capabilities = "CAPABILITY_IAM CAPABILITY_AUTO_EXPAND CAPABILITY_NAMED_IAM"
+image_repositories = []
+
+# Configure parameters below 
+parameter_overrides = """\
+InstanceType=\"t2.small\" \
+GithubRepoName=\"openstepmedia/aws-codedeploy-tutorial-01\" \
+ThumbprintList=\"6938fd4d98bab03faadb97b34396831e3780aea1\" \
+"""
